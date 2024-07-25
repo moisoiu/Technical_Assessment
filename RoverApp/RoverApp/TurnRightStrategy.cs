@@ -1,6 +1,6 @@
 ﻿namespace RoverApp;
 
-internal class TurnRightStrategy : IMovementStrategy
+public class TurnRightStrategy : IMovementStrategy
 {
     public void Move(RoverV2 rover)
     {

@@ -1,11 +1,10 @@
 ﻿namespace RoverApp;
 
-
 public sealed class RoverV2
 {
-    public int X { get; private set; }
-    public int Y { get; private set; }
-    public DirectionEnum Direction { get; private set; }
+    public int X { get; set; }
+    public int Y { get; set; }
+    public DirectionEnum Direction { get; set; }
 
     private readonly MovementHandler _movementHandler;
 

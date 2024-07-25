@@ -1,6 +1,6 @@
 ﻿namespace RoverApp;
 
-internal class MoveBackwardStrategy : IMovementStrategy
+public class MoveBackwardStrategy : IMovementStrategy
 {
     public void Move(RoverV2 rover)
     {
