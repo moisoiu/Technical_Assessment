@@ -5,4 +5,5 @@ public enum MovementEnum
     Left,
     Right,
     Forward,
+    Backward,
 }

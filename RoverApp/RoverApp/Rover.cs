@@ -29,6 +29,9 @@ public sealed class Rover
                 case MovementEnum.Forward:
                     MoveForward();
                     break;
+                case MovementEnum.Backward:
+                    MoveBackward();
+                    break;
                 default:
                     break;
             }
@@ -74,6 +77,25 @@ public sealed class Rover
                 break;
             case DirectionEnum.West:
                 X -= 1;
+                break;
+        }
+    }
+
+    private void MoveBackward()
+    {
+        switch (Direction)
+        {
+            case DirectionEnum.North:
+                Y -= 1;
+                break;
+            case DirectionEnum.East:
+                X -= 1;
+                break;
+            case DirectionEnum.South:
+                Y += 1;
+                break;
+            case DirectionEnum.West:
+                X += 1;
                 break;
         }
     }

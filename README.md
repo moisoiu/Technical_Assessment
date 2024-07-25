@@ -2,7 +2,7 @@
 You’re part of the team that explores Mars by sending remotely controlled vehicles to the surface of the planet.
 # Your Task
 - Refactor the code to follow all the SOLID principles and add as many tests as possible; the minimum requirement should cover all public methods.
-- Please commit small refactors each time with descritive title
+- Please commit small refactors each time with descriptive title
 - Between the first commit with initial and unmodified code and last commit (max 4h)
 
 # Requirements
