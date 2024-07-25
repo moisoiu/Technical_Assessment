@@ -5,10 +5,10 @@ namespace RoverApp.Tests;
 public class RoverOldTests
 {
     [Fact]
-    public void Rover_Should_HaveDefaultValue_When_IsInitializedCorrectly()
+    public void RoverOld_Should_HaveDefaultValue_When_IsInitializedCorrectly()
     {
         // Arrange
-        var rover = new Rover(0, 0, 'N');
+        var rover = new RoverOld(0, 0, 'N');
 
         // Act
         var position = rover.GetPosition();
@@ -18,10 +18,10 @@ public class RoverOldTests
     }
 
     [Fact]
-    public void Rover_Should_TurnLeft_When_CorrectMovemenetIsSentCorrectly()
+    public void RoverOld_Should_TurnLeft_When_CorrectMovemenetIsSentCorrectly()
     {
         // Arrange
-        var rover = new Rover(0, 0, 'N');
+        var rover = new RoverOld(0, 0, 'N');
 
         // Act
         rover.Move("L");
@@ -32,10 +32,10 @@ public class RoverOldTests
     }
 
     [Fact]
-    public void Rover_Should_TurnRight_When_CorrectMovemenetIsSentCorrectly()
+    public void RoverOld_Should_TurnRight_When_CorrectMovemenetIsSentCorrectly()
     {
         // Arrange
-        var rover = new Rover(0, 0, 'N');
+        var rover = new RoverOld(0, 0, 'N');
 
         // Act
         rover.Move("R");
@@ -46,10 +46,10 @@ public class RoverOldTests
     }
 
     [Fact]
-    public void Rover_Should_MoveForward_When_CorrectMovemenetIsSentCorrectly()
+    public void RoverOld_Should_MoveForward_When_CorrectMovemenetIsSentCorrectly()
     {
         // Arrange
-        var rover = new Rover(0, 0, 'N');
+        var rover = new RoverOld(0, 0, 'N');
 
         // Act
         rover.Move("M");
@@ -60,10 +60,10 @@ public class RoverOldTests
     }
 
     [Fact]
-    public void Rover_Should_HandleMultipleMovementCorrectly_When_MultipleMoveCommandsAreSent()
+    public void RoverOld_Should_HandleMultipleMovementCorrectly_When_MultipleMoveCommandsAreSent()
     {
         // Arrange
-        var rover = new Rover(0, 0, 'N');
+        var rover = new RoverOld(0, 0, 'N');
 
         // Act
         rover.Move("MMRMMRMRRM");
@@ -74,10 +74,10 @@ public class RoverOldTests
     }
 
     [Fact]
-    public void Rover_Should_HandleMultipleMovementCorrectly_When_MultipleMoveCommandsAreSentAndThePossitionIsDifferent()
+    public void RoverOld_Should_HandleMultipleMovementCorrectly_When_MultipleMoveCommandsAreSentAndThePossitionIsDifferent()
     {
         // Arrange
-        var rover = new Rover(1, 2, 'N');
+        var rover = new RoverOld(1, 2, 'N');
 
         // Act
         rover.Move("LMLMLMLMM");

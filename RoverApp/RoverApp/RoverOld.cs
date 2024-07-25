@@ -1,12 +1,12 @@
 namespace RoverApp;
 
-public sealed class Rover
+public sealed class RoverOld
 {
     public int X { get; private set; }
     public int Y { get; private set; }
     public char Direction { get; private set; }
 
-    public Rover(int x, int y, char direction)
+    public RoverOld(int x, int y, char direction)
     {
         X = x;
         Y = y;
