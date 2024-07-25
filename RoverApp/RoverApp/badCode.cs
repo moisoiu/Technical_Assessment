@@ -1,6 +1,4 @@
-using System;
-
-public class Rover
+public sealed class Rover
 {
     public int X { get; set; }
     public int Y { get; set; }
@@ -59,15 +57,5 @@ public class Rover
     public void PrintPosition()
     {
         Console.WriteLine($"Rover Position: {X}, {Y}, {Direction}");
-    }
-}
-
-public class Program
-{
-    public static void Main(string[] args)
-    {
-        Rover rover = new Rover(0, 0, 'N');
-        rover.Move("LMLMLMLMM");
-        rover.PrintPosition();
     }
 }
